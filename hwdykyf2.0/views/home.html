@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="../public/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../public/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../public/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../public/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../public/favicon/safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/landingPage/home.css">
+    <script src="../public/js/mainScripts/app.js" defer></script>
+    <script src="../public/js/quizPage/fetch-server-data.js" defer></script>
+    <script src="../public/js/handlebars-v4.7.6.js"></script>
+    <script src="../public/js/landingPage/vendor.js" defer></script>
+    <script src="../public/js/landingPage/app.js" defer></script>
+    <title>How well do you know your family | Home</title>
+</head>
+<body onload="preGen()">
+    <header>
+        <div id="top">
+            <img src="../public/images/logo2.png" alt="How Well do you know your Family" id="logoImg">
+        </div>
+        <br>
+        <div id="bottem">
+            <ul id="headerList">
+                <li> <a href="http://crabbcode.xyz/"><button id="headerButton">Home</button></a></li>
+                <li> <a href="help.html"><button id="headerButton">How to Play</button></a></li>
+                <li> <a href="home.html"><button id="headerButton">About</button></a></li>
+            </ul>
+        </div>
+        <hr id="mainSep">
+    </header> <br>
+    <section id="selection">
+        <div id="create">
+            <div class="whiteSpace">
+                <h1 id="title">Create A Quiz</h1>
+                <div id="code"> <br>
+                    <h2 id="subTitle">Your Code:</h2> <div id="codeBox"><h2 id="gameCode">Creating...</h2></div>
+                </div> <br>
+                <button class="bodyButton">Edit Your Quiz</button>
+            </div>
+        </div>
+        <hr class="seperateSpaces">
+        <div id="join">
+            <div class="whiteSpace">
+                <h1 id="title">Do a Quiz</h1>
+                <div id="code"> <br>
+                    <form action="/auth/quiz" method="GET">
+                        <input type="number" id="joinGameCode" name="joinGameCode" placeholder="Code...">
+                        <button type="submit" class="bodyButton" id="bodyButtonJoin">Do Quiz</button>
+                    </form>
+                </div> <br>
+                <!-- {{#if message}}
+                    <script>
+                        const joinError = document.getElementById('joinError')
+                        joinError.classList.remove('displayNone')
+                        joinError.textContent = message
+                    </script>
+                {{/if}} -->
+                <h3 id="joinError" class="displayNone"></h3>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

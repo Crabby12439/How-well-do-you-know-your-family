@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="../public/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../public/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../public/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../public/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../public/favicon/safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="../public/js/quizPage/imports.js" defer></script> -->
+    <link rel="stylesheet" href="../public/css/quizPage/app.css">
+    <script src="../public/js/handlebars-v4.7.6.js"></script>
+    <script src="../public/js/quizPage/fetch-server-data.js" defer></script>
+    <title>How well do you know your family | Quiz</title>
+</head>
+<body>
+    <header>
+        <img id="logoImg" src="../public/images/logo2.png" alt="logo">
+    </header>
+    <section id="quiz">
+        <div id="nameBox" class="borderSolidBlack">
+            <h1 id="title">{{creatorName}}'s Quiz</h1>
+        </div>
+        <form method="POST">
+            <div id="b1" class="box">
+                <div class="QTitles">
+                    <h3 class="Qtitle">Question One</h3>
+                    <h4 class="QsubTitle">There was an error loading this Question</h4>
+                </div>
+                <section class="quizBox">
+                    <div class="innerBorder">
+                        <div class="borderInputLabel">
+                            <div class="miniSep" id="B1O1">
+                                <input type="radio" name="Q1O" id="Q1O1">
+                                <label for="Q1O1" class="label">Quiz infomation could not be accessed</label> <br> 
+                            </div>
+                        </div>
+
+                        <div class="borderInputLabel">
+                            <div class="miniSep" id="B1O1" onclick="asignToRadio(1, 2)">
+                                <input type="radio" name="Q1O" id="Q1O2">
+                                <label for="Q1O2" class="label">There was an error loading this Option</label> <br> 
+                            </div>
+                        </div>
+
+                        <div class="borderInputLabel">
+                            <div class="miniSep" id="B1O1" onclick="asignToRadio(1, 3)">
+                                <input type="radio" name="Q1O" id="Q1O3">
+                                <label for="Q1O3" class="label">There was an error loading this Option</label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </form>
+
+        <form method="POST">
+            <div id="b2" class="box">
+                <div class="QTitles">
+                    <h3 class="Qtitle">Question Two</h3>
+                    <h4 class="QsubTitle">There was an error loading this Question</h4>
+                </div>
+                <section class="quizBox">
+                    <div class="innerBorder">
+                        <div class="borderInputLabel" id="B2O1" onclick="asignToRadio(2, 1)">
+                            <div class="miniSep">
+                                <input type="radio" name="Q2O" id="Q2O1">
+                                <label for="Q2O1" class="label">There was an error loading this Option</label> <br> 
+                            </div>
+                        </div>
+
+                        <div class="borderInputLabel" id="B2O2" onclick="asignToRadio(2, 2)">
+                            <div class="miniSep">
+                                <input type="radio" name="Q2O" id="Q2O2">
+                                <label for="Q2O2" class="label">There was an error loading this Option</label> <br> 
+                            </div>
+                        </div>
+
+                        <div class="borderInputLabel" id="B2O3" onclick="asignToRadio(2, 3)">
+                            <div class="miniSep">
+                                <input type="radio" name="Q2O" id="Q2O3">
+                                <label for="Q2O3" class="label">There was an error loading this Option</label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </form>   
+
+        <form method="POST">
+            <div id="b3" class="box">
+                <div class="QTitles">
+                    <h3 class="Qtitle">Question Three </h3>
+                    <h4 class="QsubTitle">There was an error loading this Question</h4>
+                </div>
+                <section class="quizBox">
+                    <div class="innerBorder">
+                        <div class="borderInputLabel" id="B3O1">
+                            <div class="miniSep">
+                                <input type="radio" name="Q3O" id="Q3O1">
+                                <label for="Q3O1" class="label">There was an error loading this Option</label> <br> 
+                            </div>
+                        </div>
+
+                        <div class="borderInputLabel" id="B3O2">
+                            <div class="miniSep">
+                                <input type="radio" name="Q3O" id="Q3O2">
+                                <label for="Q3O2" class="label">There was an error loading this Option</label> <br> 
+                            </div>
+                        </div>
+
+                        <div class="borderInputLabel" id="B3O3">
+                            <div class="miniSep">
+                                <input type="radio" name="Q3O" id="Q3O3">
+                                <label for="Q3O3" class="label">There was an error loading this Option</label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </form>
+
+        <form method="POST">
+            <div id="b4" class="box">
+                <div class="QTitles">
+                    <h3 class="Qtitle">Question Four</h3>
+                    <h4 class="QsubTitle">There was an error loading this Question</h4>
+                </div>
+                <section class="quizBox">
+                    <div class="innerBorder">
+                        <div class="borderInputLabel" id="B4O1">
+                            <div class="miniSep">
+                                <input type="radio" name="Q4O" id="Q4O1">
+                                <label for="Q4O1" class="label">There was an error loading this Option</label> <br> 
+                            </div>
+                        </div>
+
+                        <div class="borderInputLabel" id="B4O2">
+                            <div class="miniSep">
+                                <input type="radio" name="Q4O" id="Q4O2">
+                                <label for="Q4O2" class="label">There was an error loading this Option</label> <br> 
+                            </div>
+                        </div>
+
+                        <div class="borderInputLabel" id="B4O3">
+                            <div class="miniSep">
+                                <input type="radio" name="Q4O" id="Q4O3">
+                                <label for="Q4O3" class="label">There was an error loading this Option</label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </form>
+
+        <form method="POST">
+            <div id="b5" class="box">
+                <div class="QTitles">
+                    <h3 class="Qtitle">Question Five</h3>
+                    <h4 class="QsubTitle">There was an error loading this Question</h4>
+                </div>
+                <section class="quizBox">
+                    <div class="innerBorder">
+                        <div class="borderInputLabel" id="B5O1">
+                            <div class="miniSep">
+                                <input type="radio" name="Q5O" id="Q5O1">
+                                <label for="Q5O1" class="label">There was an error loading this Option</label> <br> 
+                            </div>
+                        </div>
+
+                        <div class="borderInputLabel" id="B5O2">
+                            <div class="miniSep">
+                                <input type="radio" name="Q5O" id="Q5O2">
+                                <label for="Q5O2" class="label">There was an error loading this Option</label> <br> 
+                            </div>
+                        </div>
+
+                        <div class="borderInputLabel" id="B5O3">
+                            <div class="miniSep">
+                                <input type="radio" name="Q5O" id="Q5O3">
+                                <label for="Q5O3" class="label">There was an error loading this Option</label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </form>
+
+        <form method="POST">
+            <div id="b6" class="box">
+                <div class="QTitles">
+                    <h3 class="Qtitle">Question Six</h3>
+                    <h4 class="QsubTitle">There was an error loading this Question</h4>
+                </div>
+                <section class="quizBox">
+                    <div class="innerBorder">
+                        <div class="borderInputLabel" id="B6O1">
+                            <div class="miniSep">
+                                <input type="radio" name="Q6O" id="Q6O1">
+                                <label for="Q6O1" class="label">There was an error loading this Option</label> <br> 
+                            </div>
+                        </div>
+
+                        <div class="borderInputLabel" id="B6O2">
+                            <div class="miniSep">
+                                <input type="radio" name="Q6O" id="Q6O2">
+                                <label for="Q6O2" class="label">There was an error loading this Option</label> <br> 
+                            </div>
+                        </div>
+
+                        <div class="borderInputLabel" id="B6O3">
+                            <div class="miniSep">
+                                <input type="radio" name="Q6O" id="Q6O3">
+                                <label for="Q6O3" class="label">There was an error loading this Option</label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </form>
+
+        <form method="POST">
+            <div id="b7" class="box">
+                <div class="QTitles">
+                    <h3 class="Qtitle">Question Seven</h3>
+                    <h4 class="QsubTitle">There was an error loading this Question</h4>
+                </div>
+                <section class="quizBox">
+                    <div class="innerBorder">
+                        <div class="borderInputLabel" id="B7O1">
+                            <div class="miniSep">
+                                <input type="radio" name="Q7O" id="Q7O1">
+                                <label for="Q7O1" class="label">There was an error loading this Option</label> <br> 
+                            </div>
+                        </div>
+
+                        <div class="borderInputLabel" id="B7O2">
+                            <div class="miniSep">
+                                <input type="radio" name="Q7O" id="Q7O2">
+                                <label for="Q7O2" class="label">There was an error loading this Option</label> <br> 
+                            </div>
+                        </div>
+
+                        <div class="borderInputLabel" id="B7O3">
+                            <div class="miniSep">
+                                <input type="radio" name="Q7O" id="Q7O3">
+                                <label for="Q7O3" class="label">There was an error loading this Option</label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </form>
+
+        <form method="POST">
+            <div id="b8" class="box">
+                <div class="QTitles">
+                    <h3 class="Qtitle">Question Eight</h3>
+                    <h4 class="QsubTitle">There was an error loading this Question</h4>
+                </div>
+                <section class="quizBox">
+                    <div class="innerBorder">
+                        <div class="borderInputLabel" id="B8O1">
+                            <div class="miniSep">
+                                <input type="radio" name="Q8O" id="Q8O1">
+                                <label for="Q8O1" class="label">There was an error loading this Option</label> <br> 
+                            </div>
+                        </div>
+
+                        <div class="borderInputLabel" id="B8O2">
+                            <div class="miniSep">
+                                <input type="radio" name="Q8O" id="Q8O2">
+                                <label for="Q8O2" class="label">There was an error loading this Option</label> <br> 
+                            </div>
+                        </div>
+
+                        <div class="borderInputLabel" id="B8O3">
+                            <div class="miniSep">
+                                <input type="radio" name="Q8O" id="Q8O3">
+                                <label for="Q8O3" class="label">There was an error loading this Option</label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </form>
+
+        <form method="POST">
+            <div id="b9" class="box">
+                <div class="QTitles">
+                    <h3 class="Qtitle">Question Nine</h3>
+                    <h4 class="QsubTitle">There was an error loading this Question</h4>
+                </div>
+                <section class="quizBox">
+                    <div class="innerBorder">
+                        <div class="borderInputLabel" id="B9O1">
+                            <div class="miniSep">
+                                <input type="radio" name="Q9O" id="Q9O1">
+                                <label for="Q9O1" class="label">There was an error loading this Option</label> <br> 
+                            </div>
+                        </div>
+
+                        <div class="borderInputLabel" id="B9O2">
+                            <div class="miniSep">
+                                <input type="radio" name="Q9O" id="Q9O2">
+                                <label for="Q9O2" class="label">There was an error loading this Option</label> <br> 
+                            </div>
+                        </div>
+
+                        <div class="borderInputLabel" id="B9O3">
+                            <div class="miniSep">
+                                <input type="radio" name="Q9O" id="Q9O3">
+                                <label for="Q9O3" class="label">There was an error loading this Option</label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </form>  
+
+        <form method="POST">
+            <div id="b10" class="box">
+                <div class="QTitles">
+                    <h3 class="Qtitle">Question Ten</h3>
+                    <h4 class="QsubTitle">There was an error loading this Question</h4>
+                </div>
+                <section class="quizBox">
+                    <div class="innerBorder">
+                        <div class="borderInputLabel" id="B10O1">
+                            <div class="miniSep">
+                                <input type="radio" name="Q10O" id="Q10O1">
+                                <label for="Q10O1" class="label">There was an error loading this Option</label> <br> 
+                            </div>
+                        </div>
+
+                        <div class="borderInputLabel" id="B10O2">
+                            <div class="miniSep">
+                                <input type="radio" name="Q10O" id="Q10O2">
+                                <label for="Q10O2" class="label">There was an error loading this Option</label> <br> 
+                            </div>
+                        </div>
+
+                        <div class="borderInputLabel" id="B10O3">
+                            <div class="miniSep">
+                                <input type="radio" name="Q10O" id="Q10O3">
+                                <label for="Q10O3" class="label">There was an error loading this Option</label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </form>
+
+    </section>
+</body>
+</html>

@@ -1,0 +1,218 @@
+body {
+    background-image: url('../quizPage/background3.png');
+    font-family: 'Lato';
+    scroll-snap-stop: normal;
+    overflow-x: hidden;
+}
+#logoImg {
+    height: 200px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+    position: relative;
+    top: 2px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#quiz {
+    margin: auto;
+    padding: 100px;
+    background-image: url('../quizPage/backgroundSelection.png');
+    border-style: solid;
+    border-color: black;
+    border-radius: 30px;
+    width: 800px;
+    position: relative;
+    top: 100px;
+}
+#nameBox {
+    text-align: center;
+    background-color: rgb(255, 193, 21);
+    position: relative;
+    bottom: 50px;
+    border-radius: 30px;
+    border-width: 3px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    /* display: inline-block; */
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato-Black.woff2') format('woff2'),
+    url('Lato-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* Presets */
+input {
+    cursor: pointer;
+}
+.borderSolidBlack {
+    border-style: solid;
+    border-color: black;
+    border-radius: 30px;
+}
+.box {
+    margin: auto;
+    padding: 3px;
+    background-image: url('../quizPage/background3.png');
+    border-style: solid;
+    border-color: black;
+    border-radius: 50px;
+    margin-bottom: 50px;
+    height: 500px;
+}
+.Qtitle {
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 30px;
+    position: relative;
+    bottom: 15px;
+}
+.QsubTitle {
+    text-align: center;
+    position: relative;
+    bottom: 25px;
+}
+.quizBox {
+    text-align: center;
+    /* border-style: solid;
+    border-color: black; */
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    padding: 10px;
+}
+.label {
+    position: relative;
+    bottom: 5px;
+    display: inline-block;
+    width: 500px;
+    height: 35px;
+    font-size: 20px;
+}
+input {
+    position: relative;
+    top: 18px;
+    margin-right: 430px;
+}
+.inputGoLabel {
+    width: 1px;
+    height: 80px;
+}
+.borderInputLabel {
+    border-style: solid;
+    border-color: rgb(153, 0, 184);
+    background-color: rgb(248, 221, 255);
+    border-width: 2px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.miniSep {
+    cursor: pointer;
+    border-right-style: solid;
+    border-right-color: rgb(153, 0, 184);
+    border-right-width: 2px;
+    width: 50px;
+    position: relative;
+    left: 20px;
+}
+.QTitles {
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 30px;
+    width: 250px;
+    height: 120px;
+    margin: auto;
+    padding: 10px;
+    margin-top: 35px;
+}
+@media screen and (max-width: 1337px) {
+    #quiz {
+        width: 700px;
+        position: relative;
+    }
+    #logoImg {
+        position: relative;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #quiz {
+        width: 600px;
+    }
+}
+@media screen and (max-width: 905px) {
+    #quiz {
+        width: 500px;
+    }
+    .borderInputLabel {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        right: 20px;
+    }
+    .label {
+        font-size: 16px;
+        position: relative;
+        right: 40px;
+    }
+    #logoImg {
+        position: relative;
+    }
+}
+@media screen and (max-width: 765px) {
+    #quiz {
+        width: 400px;
+    }
+    #logoImg {
+        left: 40px;
+    }
+    .borderInputLabel {
+        width: 320px;
+        position: relative;
+        right: 60px;
+    }
+    .label {
+        font-size: 13px;
+        position: relative;
+        right: 75px;
+    }
+}
+@media screen and (max-width: 765px) {
+    #logoImg {
+        position: relative;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    header {
+        width: 650px;
+    }
+}
+@media screen and (max-width: 750px) {
+    #quiz {
+        position: relative;
+        left: 20px;
+    }
+    #logoImg {
+        position: relative;
+        left: 10px;
+    }
+}
+@media screen and (max-width: 610px) {
+    #logoImg {
+        position: relative;
+        right: 50px;
+    }
+    #quiz {
+        position: relative;
+        left: 30px;
+    }
+}

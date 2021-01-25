@@ -1,0 +1,582 @@
+body {
+    background-image: url('../landingPage/background3.png');
+    /* overflow-x: hidden; */
+}
+#logoImg {
+    height: 170px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+    position: relative;
+    top: 2px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+header {
+    position: relative;
+    background-color: white;
+    height: 10px;
+}
+#headImg {
+    position: relative;
+}
+h2 {
+    position: relative;
+    bottom: 40px;
+}
+#headerList {
+    position: relative;
+    display: inline-flex;
+    margin: 50px;
+    height: 10px;
+    list-style-type: none;
+    bottom: 95px;
+    text-align: center;
+    right: 85px;
+}
+#bottem {
+    text-align: center;
+}
+li {
+    margin: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: 'Lato';
+    font-weight: bolder;
+}
+#headerButton {
+    position: absolute;
+    display: flex;
+    font-size: medium;
+    outline: none;
+    background-color: black;
+    color: white;
+    border-color: transparent;
+    border-style: solid;
+    cursor: pointer;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 40px;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+}
+#headerButton:hover {
+    border-color: transparent;
+    border-color: black;
+    background-color: rgb(255, 193, 21);
+    color: black;
+}
+#mainSep {
+    position: relative;
+    bottom: 10px;
+    width: 10px;
+    color: cadetblue;
+}
+#textGroup {
+    bottom: 50px;
+    font-family: 'Emilys Candy';
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+#align {
+    text-align: center;
+    position: relative;
+    top: 700px;
+}
+#selection {
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    position: relative;
+    overflow: visible;
+    padding: 150px;
+    width: 50%;
+    height: 300px;
+    background-image: url('../landingPage/backgroundSelection.png');
+    border-style: solid;
+    border-color: rebeccapurple;
+    border-radius: 50px;
+    font-family: 'Lato';
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+    top: 350px;
+}
+#title {
+    background-color: rgb(255, 193, 21);
+    color: black;
+    height: 40px;
+    border-style: solid;
+    border-color: black;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    border-radius: 15px;
+    margin: auto;
+    padding: 10px;
+    width: 500px;
+    position: relative;
+    bottom: 30px;
+}
+.bodyButton {
+    margin: auto;
+    padding: 10px;
+    font-size: large;
+    background-color: rgb(225, 78, 255);
+    width: 200px;
+    height: 60px;
+    border-color: black;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    text-align: center;
+    color: black;
+    border-style: solid;
+    border-radius: 25px;
+    position: relative;
+    top: 50px;
+    left: 130px;
+    cursor: pointer;
+    outline: none;
+}
+.bodyButton:hover {
+    background-color: rgb(225, 78, 255);
+    color: black;
+    border-color: black;
+    width: 230px;
+}
+#bodyButtonJoin {
+    left: 0px;
+}
+#code {
+    width: 350px;
+    height: 70px;
+    background-color: rgb(225, 78, 255);
+    color: black;
+    margin: auto;
+    padding: 10px;
+    position: relative;
+    top: 40px;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+}
+#codeBox {
+    width: 190px;
+    font-size: 22px;
+    text-align: center;
+    float: right;
+}
+#gameCode {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+    color: black;
+    border-style: solid;
+    border-color: white;
+    border-radius: 20px;
+    height: 38px;
+    position: relative;
+    bottom: 37px;
+}
+#subTitle {
+    float: left;
+    position: relative;
+    bottom: 33px;
+    font-size: 28px;
+    position: relative;
+    left: 5px;
+    bottom: 30px;
+}
+#create {
+    float: left;
+}
+#join {
+    float: right;
+    position: relative;
+    bottom: 436px;
+}
+#joinGameCode {
+    height: 50px;
+    width: 300px;
+    position: relative;
+    bottom: 15px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 30px;
+    font-size: 22px;
+    font-weight: 900;
+    outline: none;
+    text-align: center;
+    letter-spacing: 15px;
+}
+::placeholder {
+    letter-spacing: 0px;
+}
+.seperateSpaces {
+    width: 1px;
+    border-style: solid;
+    background-color: white;
+    border-color: white;
+    height: 140%;
+    position: relative;
+    bottom: 70px;
+    right: 310px;
+}
+#howToPlay:hover {
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    overflow: auto;
+}
+/* @media screen and (max-width: 1874px) {
+    #mobileCenterBox1 {
+        text-align: center;
+    }
+} */
+.whiteSpace {
+    background-image: url(../landingPage/background3.png);
+    height: 350px;
+    width: 600px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 30px;
+}
+footer {
+    padding: 10px;
+    height: -550px;
+}
+@font-face {
+    font-family: 'Emilys Candy';
+    src: url('EmilysCandy-Regular.woff2') format('woff2'),
+    url('EmilysCandy-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato-Black.woff2') format('woff2'),
+    url('Lato-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+#logoImgHelp {
+    text-align: center;
+    height: 170px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+    position: relative;
+    top: 2px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#getHelpSection {
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    overflow: visible;
+    padding: 150px;
+    margin: 150px;
+    height: 285px;
+    background-color: white;
+    border-style: solid;
+    border-color: #cb82ff;
+    border-radius: 30px;
+    font-family: 'Lato';
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+#HTP {
+    position: relative;
+    font-size: xx-large;
+    text-decoration: underline;
+    bottom: 100px;
+}
+#H1 {
+    position: relative;
+    bottom: 90px;
+}
+#p1 {
+    position: relative; 
+    bottom: 80px;
+}
+#H2 {
+    position: relative;
+    bottom: 70px; 
+}
+#p2 {
+    position: relative;
+    bottom: 60px;
+}
+#H3 {
+    position: relative;
+    bottom: 55px;
+}
+#p3 {
+    position: relative;
+    bottom: 40px;
+}
+#homeHelp {
+    font-family: 'Lato';
+    color: white;
+    outline: none;
+    background-color: black;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    border-style: solid;
+    border-color: white;
+    font-size: medium;
+    height: 60px;
+    width: 150px;
+    position: relative;
+    object-position: center;
+    bottom: 50px;
+    cursor: pointer;
+}
+#backBtn {
+    object-position: center;
+    
+}
+#homeHelp:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+    cursor: pointer;
+}
+@media screen and (max-width: 2560px) {
+    #homeHelp {
+        border-color: white;
+    }
+}
+#selectionCompleted {
+    position: relative;
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    overflow: visible;
+    padding: 150px;
+    margin: 250px;
+    height: 125px;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-radius: 30px;
+    font-family: 'Lato';
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+    left: 20px;
+}
+#redo {
+    font-family: 'Lato';
+    color: white;
+    outline: none;
+    background-color: rgb(255, 51, 0);
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    border-style: solid;
+    border-color: black;
+    font-size: medium;
+    height: 60px;
+    width: 150px;
+    position: relative;
+    top: 20px;
+    cursor: pointer;
+}
+#redo:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+    cursor: pointer;    
+}
+#returnHome {
+    font-family: 'Lato';
+    color: white;
+    outline: none;
+    background-color: rgb(0, 0, 0);
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    border-style: solid;
+    border-color: black;
+    font-size: medium;
+    height: 40px;
+    width: 150px;
+    position: relative;
+    top: 25px;
+    cursor: pointer;
+}
+#returnHome:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+    cursor: pointer;    
+}
+#completedObjects {
+    position: relative;
+    bottom: 90px;
+}
+#wipeMsg {
+    text-align: center;
+    color:rgb(0, 139, 30);
+    position: relative;
+    top: 20px;
+}
+#checking {
+    margin: auto;
+    font-family: 'Lato';
+    color:rgb(255, 51, 0);
+    background-color: rgb(255, 255, 255);
+    border-color: black;
+    border-radius: 20px;
+    border-style: solid;
+    text-align: center;
+    width: 50%;
+    height: 45px;
+    margin-top: 200px;
+    padding: 15px;
+}
+#joinError {
+    border-style: solid;
+    border-color: black;
+    border-radius: 30px;
+    border-width: 1px;
+    font-size: 18px;
+    margin: auto;
+    padding: 3px;
+    background-color: rgb(255, 93, 93);
+    position: relative;
+    top: 60px;
+    width: 250px;
+    height: 25px;
+}
+.displayNone {
+    display: none;
+}
+@media screen and (max-width: 3760px) {
+    #selection {
+        margin: auto;
+        padding: 100px;
+        width: 1500px;
+    }
+}
+@media screen and (max-width: 3760px) {
+    #selection {
+        width: 1300px;
+    }
+}
+@media screen and (max-width: 1556px) {
+    #selection {
+        left: 0px;
+        width: 607px;
+        height: 840px;
+    }
+    .seperateSpaces {
+        display: none;
+    }
+    #join {
+        position: relative;
+        top: 100px;
+    }
+}
+@media screen and (max-width: 850px) {
+    #title {
+        width: 300px;
+    }
+    .whiteSpace {
+        width: 450px;
+    }
+    #selection {
+        width: 450px;
+    }
+}
+@media screen and (max-width: 755px) {
+    #selection {
+        width: 350px;
+    }
+    #create {
+        position: relative;
+        right: 40px;
+    }
+    #join {
+        position: relative;
+        left: 60px;
+    }
+}
+@media screen and (max-width: 740px) {
+    #selection {
+        position: relative;
+        left: 20px;
+    }
+    #logoImg {
+        position: relative;
+        left: 20px;
+    }   
+}
+@media screen and (max-width: 600px) {
+    #selection {
+        position: relative;
+        left: 80px;
+    }
+    #logoImg {
+        position: relative;
+        left: 80px;
+    }  
+}
+@media screen and (max-width: 425px) {
+    #selection {
+        position: relative;
+        left: 80px;
+    }
+    #logoImg {
+        position: relative;
+        left: 170px;
+    }
+}
+@media screen and (max-width: 320px) {
+    #selection {
+        position: relative;
+        left: 90px;
+    }
+    #logoImg {
+        position: relative;
+        left: 220px;
+    }
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
