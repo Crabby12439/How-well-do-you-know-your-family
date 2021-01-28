@@ -1,0 +1,260 @@
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+body {
+    background-image: url('../quizPage/background3.png');
+    font-family: 'Lato';
+    scroll-snap-stop: normal;
+    overflow-x: hidden;
+}
+#logoImg {
+    height: 200px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+    position: relative;
+    top: 2px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#title {
+    text-align: center;
+    position: relative;
+    bottom: 10px;
+}
+#formBox1 {
+    position: relative;
+    bottom: 20px;
+}
+#formBox2 {
+    height: 140px;
+}
+#nameBox {
+    position: relative;
+    top: 15px;
+}
+#nameBox::placeholder {
+    color: rgb(255, 255, 255);
+    opacity: 0.6;
+}
+#skipBtn {
+    background-color: tomato;
+}
+#nextBtn {
+    background-color: yellowgreen;
+}
+#nameBoxRed {
+    background-color: tomato;
+    position: relative;
+    top: 15px;
+}
+#nameBoxGreen {
+    background-color: yellowgreen;
+    position: relative;
+    top: 15px;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato-Black.woff2') format('woff2'),
+    url('Lato-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Presets */
+
+.createWrapper {
+    background-image: url('./backgroundSelection.png');
+    width: 700px;
+    height: 380px;
+    padding: 10px;
+    margin: auto;
+    border-style: solid;
+    border-color: black;
+    border-radius: 30px;
+    margin-top: 100px;
+}
+.borderSolidBlack {
+    border-style: solid;
+    border-color: black;
+    border-radius: 30px;
+}
+.QBox {
+    text-align: center;
+    background-color: rgb(255, 193, 21);
+    border-radius: 30px;
+    border-width: 3px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 10px;
+}
+.formBox {
+    background-image: url('../landingPage/background3.png');
+    width: 600px;
+    height: 250px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+.formContentWrapper {
+    margin-top: 60px;
+}
+.formHeader {
+    font-size: xx-large;
+}
+.inputBox {
+    color: rgb(228, 228, 228);
+    outline: none;
+    text-indent: 10px;
+    height: 60px;
+    width: 200px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Lato';
+    background-color: rgb(225, 78, 255);
+}
+
+.inputBtn {
+    margin-top: 10px;
+    height: 55px;
+    width: 140px;
+    font-family: 'Lato';
+    font-size: medium;
+    background-color: black;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    margin-left: 30px;
+    margin-right: 30px;
+    -moz-transition: all .1s ease-in;
+    -o-transition: all .1s ease-in;
+    -webkit-transition: all .1s ease-in;
+    transition: all .1s ease-in;
+}
+.nameType {
+    margin-top: 80px;
+    width: 200px;
+}
+.inputBtn:hover {
+    background-color: white;
+    color: black;
+
+}
+.borderSingleBottom {
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom-color: rgb(37, 37, 37);
+}
+.subBtn {
+    font-family: 'Lato';
+    text-align: center;
+    background-color: rgb(225, 78, 255);
+    color: black;
+    cursor: pointer;
+    width: 170px;
+    height: 50px;
+    margin-top: 40px;
+    border-radius: 10px;
+    border-color: black;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    outline: none;
+}
+.subBtn:hover {
+    background-color: rgb(218, 31, 255);
+    color: black;
+}
+.helpBtn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin: auto;
+    margin-top: 40px;
+    background: white;
+    width: fit-content;
+}
+#helpText:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.displayNone {
+    display: none;
+}
+.slowAni {
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+.fade-in {
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+    -moz-animation: fadeIn ease 1s;
+    -o-animation: fadeIn ease 1s;
+    -ms-animation: fadeIn ease 1s;
+    }
+    @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+/* .fade-out {
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+    -moz-animation: fadeIn ease 1s;
+    -o-animation: fadeIn ease 1s;
+    -ms-animation: fadeIn ease 1s;
+    }
+    @keyframes fadeIn {
+    0% {opacity:1;}
+    100% {opacity:0;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:1;}
+    100% {opacity:0;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:1;}
+    100% {opacity:0;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:1;}
+    100% {opacity:0;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:1;}
+    100% {opacity:0;}
+} */

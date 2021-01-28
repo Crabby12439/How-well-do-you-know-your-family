@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../public/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../public/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../public/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../public/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../public/favicon/safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/createPage/create.css">
+    <script src="../public/js/createpage/create.js" defer></script>
+    <title>How well do you know your family | Create your quiz</title>
+</head>
+<body>
+    <header>
+        <img id="logoImg" src="../public/images/logo2.png" alt="logo">
+    </header>
+    <section class="createWrapper" id="createWrapper">
+        <form action="/index/create" method="POST">
+            <div id="stepOne" class="step fade-in">
+                <div class="formBox borderSolidBlack">
+                    <div class="QBox borderSolidBlack">
+                        <h1 id="title1">Are you 13 or Older?</h1>
+                    </div>
+                    <div class="formContentWrapper" id="formBox1">
+                        <input type="button" name="13yoY" class="greenBg inputBtn borderSolidBlack slowAni" placeholder="Name.." autocomplete="name" value="Yes" onclick="getAge(true)">
+                        <input type="button" name="13yoN" class="redBg inputBtn borderSolidBlack slowAni" placeholder="Name.." autocomplete="name" value="No" onclick="getAge(false)"> <br>
+                        <!-- <p class="helpBtn">❔<span id="helpText"><a href="https://www.quiz.hwdykyf.com/help">Get Help</a></span></p> -->
+                    </div>
+                </div>
+            </div>
+            <div id="stepTwo" class="step displayNone fade-in">
+                <div class="QBox borderSolidBlack">
+                    <h1 id="title2">Whats Your Name?</h1>
+                </div>
+                <div class="formBox borderSolidBlack" id="formBox2">
+                    <input type="text" name="name" class="inputBox borderSolidBlack" id="nameBox" placeholder="Name.." autocomplete="name"> <br>
+                    <button type="button" class="inputBtn borderSolidBlack nameType slowAni greenBg" id="skipBtn">Skip this step</button>
+                    <button type="button" class="inputBtn borderSolidBlack nameType slowAni redBg" id="nextBtn">Next</button>
+                    <!-- <p class="helpBtn">❔<span id="helpText"><a href="https://www.quiz.hwdykyf.com/help">Get Help</a></span></p> -->
+                </div>
+            </div>
+
+            <div id="stepThree" class="step displayNone fade-in">
+                <div class="QBox borderSolidBlack">
+                    <h1 id="title3">Do you want your quiz to be anonymous?</h1>
+                </div>
+                <div class="formBox borderSolidBlack" id="formBox3">
+                    <input type="button" name="anonYes" class="inputBtn borderSolidBlack" placeholder="Name.." autocomplete="name" value="Yes">
+                    <input type="button" name="anonNo" class="inputBtn borderSolidBlack" placeholder="Name.." autocomplete="name" value="No">
+                    <!-- <p class="helpBtn">❔<span id="helpText"><a href="https://www.quiz.hwdykyf.com/help">Get Help</a></span></p> -->
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+</html>

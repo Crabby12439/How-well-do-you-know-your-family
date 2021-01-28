@@ -5,6 +5,6 @@ console.log('File loaded: AUTH')
 
 const router = express.Router()
 
-router.get('/', authController.quiz )
+router.post('/', authController.quiz )
 
 module.exports = router;
