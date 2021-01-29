@@ -24,13 +24,6 @@ body {
     position: relative;
     bottom: 10px;
 }
-#formBox1 {
-    position: relative;
-    bottom: 20px;
-}
-#formBox2 {
-    height: 140px;
-}
 #nameBox {
     position: relative;
     top: 15px;
@@ -92,6 +85,17 @@ body {
     margin-right: auto;
     position: relative;
     top: 10px;
+}
+#formBox1 {
+    position: relative;
+    bottom: 10px;
+}
+#formBox2 {
+    height: 140px;
+}
+#anonPushDown {
+    position: relative;
+    top: 15px;
 }
 .formBox {
     background-image: url('../landingPage/background3.png');

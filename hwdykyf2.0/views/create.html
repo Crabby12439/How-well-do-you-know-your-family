@@ -21,15 +21,15 @@
         <img id="logoImg" src="../public/images/logo2.png" alt="logo">
     </header>
     <section class="createWrapper" id="createWrapper">
-        <form action="/index/create" method="POST">
+        <form action="/index/createYourQuiz" method="POST" id="mainActionForm">
             <div id="stepOne" class="step fade-in">
                 <div class="formBox borderSolidBlack">
                     <div class="QBox borderSolidBlack">
                         <h1 id="title1">Are you 13 or Older?</h1>
                     </div>
                     <div class="formContentWrapper" id="formBox1">
-                        <input type="button" name="13yoY" class="greenBg inputBtn borderSolidBlack slowAni" placeholder="Name.." autocomplete="name" value="Yes" onclick="getAge(true)">
-                        <input type="button" name="13yoN" class="redBg inputBtn borderSolidBlack slowAni" placeholder="Name.." autocomplete="name" value="No" onclick="getAge(false)"> <br>
+                        <input type="button" name="ageYes" class="greenBg inputBtn borderSolidBlack slowAni" placeholder="Name.." autocomplete="name" value="Yes" onclick="getAge(true)">
+                        <input type="button" name="ageNo" class="redBg inputBtn borderSolidBlack slowAni" placeholder="Name.." autocomplete="name" value="No" onclick="getAge(false)"> <br>
                         <!-- <p class="helpBtn">❔<span id="helpText"><a href="https://www.quiz.hwdykyf.com/help">Get Help</a></span></p> -->
                     </div>
                 </div>
@@ -50,9 +50,11 @@
                 <div class="QBox borderSolidBlack">
                     <h1 id="title3">Do you want your quiz to be anonymous?</h1>
                 </div>
-                <div class="formBox borderSolidBlack" id="formBox3">
-                    <input type="button" name="anonYes" class="inputBtn borderSolidBlack" placeholder="Name.." autocomplete="name" value="Yes">
-                    <input type="button" name="anonNo" class="inputBtn borderSolidBlack" placeholder="Name.." autocomplete="name" value="No">
+                <div id="formBox3" class="formBox borderSolidBlack">
+                    <div id="anonPushDown">
+                        <input type="button" name="anonYes" class="inputBtn borderSolidBlack" placeholder="Name.." autocomplete="name" value="Yes" onclick="endSubmit()">
+                        <input type="button" name="anonNo" class="inputBtn borderSolidBlack" placeholder="Name.." autocomplete="name" value="No" onclick="endSubmit()"> <br>
+                    </div>
                     <!-- <p class="helpBtn">❔<span id="helpText"><a href="https://www.quiz.hwdykyf.com/help">Get Help</a></span></p> -->
                 </div>
             </div>

@@ -40,7 +40,23 @@ router.get('/home', (req, res) => {
 router.get('/help', (req, res) => {
     res.render('help')
 })
-
+router.get('/create', (req, res) => {
+    res.render('create')
+})
+router.post('/index/createYourQuiz', (req, res) => {
+    console.log('Recived Request from POST')
+    db.connect((err) => {
+        if (err) {
+            console.log(err)
+        } else {
+            console.log('MySQL connected')
+        }
+    })
+    const name = req.body.name;
+    const isCOPPACompYES = req.body.ageYes;
+    const isCOPPACompNO = req.body.ageNo;
+    console.log("NAME: " + name);
+})
 router.get('/index/join', (req, res) => {
     console.log('GET point reached')
     db.connect((err) => {

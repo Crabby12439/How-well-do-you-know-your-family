@@ -105,9 +105,9 @@ function s2(isComp) {
     if (isComp === true) {
         modCSS("stepTwo", null, null, null, null, null)
         DOM.nextBtn.addEventListener('click', s3)
-        document.getElementById('nameBox').disabled = true;
         DOM.skipBtn.addEventListener('click', stepSkip.bind(this, "name", "s3"))
     } else if (isComp === false) {
+        document.getElementById('nameBox').disabled = true;
         stepSkip("creatorName", "s3")
         console.log('Workin')
     }
@@ -121,4 +121,8 @@ function s3() {
     modCSS(modCSSReqNames.diReq, 700, 300, null, null, null, "createWrapper")
     console.log('Here')
 
+}
+function endSubmit() {
+    // Submits the form and packages results to be sent to the server
+    const mainActionForm = document.getElementById('mainActionForm').submit();
 }
